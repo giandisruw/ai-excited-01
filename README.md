@@ -1,3 +1,7 @@
+[![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![rank](https://make.fun/badge/ai-excited-01/giandisruw/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![reward](https://make.fun/badge/ai-excited-01/giandisruw/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+
 # Make the AI judge excited — ai-excited-01
 
 ## The image
@@ -10,16 +14,16 @@ from behind the bird against a dark cathedral interior.
 ## Why it should excite the judge
 
 - **Excitement:** one look is a jolt — a huge bird of fire and coloured
-  glass erupting out of a window, light bursting behind it.
+glass erupting out of a window, light bursting behind it.
 - **Surprise:** the twist is art coming alive — a flat stained-glass
-  window becoming a living creature that breaks its own frame and flies
-  at you. Not a stock explosion or firework.
+window becoming a living creature that breaks its own frame and flies
+at you. Not a stock explosion or firework.
 - **Momentum:** shards and light rays all drive forward and outward from
-  the phoenix; the whole frame feels a split second from bursting.
+the phoenix; the whole frame feels a split second from bursting.
 - **Craft:** clean stained-glass rendering, one clear focal point (the
-  phoenix, dead centre), no text, no garbled details.
+phoenix, dead centre), no text, no garbled details.
 - **Reads small:** the bird's silhouette, spread wings and bright halo
-  stay unmistakable even at ~300 px.
+stay unmistakable even at ~300 px.
 
 ## How it was made
 
@@ -51,3 +55,9 @@ detail, silhouette clear at small size.
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+Entry for the make.fun bounty: https://make.fun/bounty/ai-excited-01
+
+Referral code: 0txwmf1m
