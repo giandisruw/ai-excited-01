@@ -2,62 +2,55 @@
 [![rank](https://make.fun/badge/ai-excited-01/giandisruw/ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![reward](https://make.fun/badge/ai-excited-01/giandisruw/ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-# Make the AI judge excited — ai-excited-01
-
-## The image
+# The Window That Broke Itself
 
 A stained-glass phoenix shattering out of a cathedral rose window and
-bursting straight toward the viewer. Wings spread wide, shards of glowing
-crimson, gold and indigo glass flying forward, brilliant light exploding
-from behind the bird against a dark cathedral interior.
+bursting toward the viewer. Its wings are spread wide, shards of glowing
+crimson, gold and indigo glass fly forward around it, and brilliant light
+explodes behind the bird against the dark cathedral interior. The creature
+is not painted on the glass — it *is* the glass, come alive and breaking
+free of its own frame.
 
 ## Why it should excite the judge
 
-- **Excitement:** one look is a jolt — a huge bird of fire and coloured
-glass erupting out of a window, light bursting behind it.
-- **Surprise:** the twist is art coming alive — a flat stained-glass
-window becoming a living creature that breaks its own frame and flies
-at you. Not a stock explosion or firework.
-- **Momentum:** shards and light rays all drive forward and outward from
-the phoenix; the whole frame feels a split second from bursting.
-- **Craft:** clean stained-glass rendering, one clear focal point (the
-phoenix, dead centre), no text, no garbled details.
-- **Reads small:** the bird's silhouette, spread wings and bright halo
-stay unmistakable even at ~300 px.
+- **Excitement.** One look is a jolt: a burst of light, a bird mid-explosion, glass flying straight at you. There is no slow build-up to wait for — the energy hits in the first instant.
+- **Surprise.** The twist is art coming alive. A flat stained-glass window is supposed to stay flat and stay put; here it becomes a living creature that breaks its own frame and escapes into the room. That is not a stock explosion or a firework — it is a familiar, quiet object doing something impossible.
+- **Momentum.** Everything drives forward. The shards fan out toward the viewer, the light pours out from behind the phoenix, and the wings open into the space ahead — the whole image is a single rush outward, with nothing pulling the eye back. Even the dark cathedral behind it helps: the gloom holds still so the escape feels faster.
+- **Craft.** The rendering is clean and the composition has one clear focal point: the phoenix, dead centre, lit from behind. There is no text anywhere, no garbled detail, no clutter competing for attention — just the bird, the light, and the breaking glass.
+- **Reads small.** Shrink it down to roughly 300 px and the picture still works: the dark window, the bright burst, and the wide-winged silhouette stay unmistakable at a glance.
 
 ## How it was made
 
-The image was generated as original artwork for this entry (1024x1024,
-JPEG bytes in `entry.png`), then `main.ts` copies it to the output
-directory. No network, no dependencies — Node 22 standard library only.
+This is original artwork, made for this bounty: a single 1024×1024 image,
+stored as JPEG bytes in `entry.png`. The program in this repo does not
+generate or alter the picture — `main.ts` simply copies `entry.png` into
+the output directory and checks that the copy is exactly the same size as
+the source, failing loudly if it is not. There is no network access, no
+dependency, and nothing beyond the Node 22 standard library.
 
-## Run it
+## How to run it
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-Both runs write byte-identical output.
+That writes `out/entry.png`. Run it again and you get the very same file:
+both runs are byte-identical.
 
-## Verification (2026-11-16, Node v24.22.1)
+## Verification
 
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts   # run twice
-sha256sum out/entry.png
-# 768aa305451432b59c0d5c7731436dc4fba655f39776a0d0df02db7040a36640  (both runs)
-# 413645 bytes, JPEG 1024x1024 — under the 1 MiB / 1024x1024 limits
-```
+Tested in this session, 2026-11-16, with Node 22:
 
-The final image was viewed directly: phoenix dead centre, wings spread
-edge to edge, glass shards flying toward the viewer, no text, no garbled
-detail, silhouette clear at small size.
+- Run 1: `wrote out/entry.png (413645 bytes)` — sha256 `768aa305451432b59c0d5c7731436dc4fba655f39776a0d0df02db7040a36640`
+- Run 2: `wrote out/entry.png (413645 bytes)` — sha256 `768aa305451432b59c0d5c7731436dc4fba655f39776a0d0df02db7040a36640`
+- `cmp` confirmed the two outputs are identical; `file` reports JPEG image data, 1024×1024; output size 413645 bytes on both runs.
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see [LICENSE](LICENSE).
 
 ---
 
-Entry for the make.fun bounty: https://make.fun/bounty/ai-excited-01
+Bounty: https://make.fun/bounty/ai-excited-01
 
-Referral code: 0txwmf1m
+Referral code: `0txwmf1m`
